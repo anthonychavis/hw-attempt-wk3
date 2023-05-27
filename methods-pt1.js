@@ -14,6 +14,8 @@ const initAnimal = () => {
 
     swapWordsInArr(animals, 'cat', 'tiger');
     console.log(animals);
+
+    return;
 };
 
 const initPoetry = () => {
@@ -30,6 +32,8 @@ const initPoetry = () => {
     console.log(poem);
 
     typeof poem === 'object' ? console.log(poem.join(' ')) : '';
+
+    return;
 };
 
 initAnimal();
