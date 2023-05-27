@@ -10,12 +10,11 @@ const rainbowColorsArr = [
     'violet',
 ];
 
-const sentenceRainbowColors = arr => {
-    if (arr)
-        return `The colors of the rainbow are ${arr
-            .slice(0, -1)
-            .join(', ')} & ${arr.at(-1)}.`;
-    return 'Something seems a bit off';
-};
+const sentenceRainbowColors = arr =>
+    arr?.length > 1
+        ? `The colors of the rainbow are ${arr
+              .slice(0, -1)
+              .join(', ')} & ${arr.at(-1)}.`
+        : 'Something seems a bit off';
 
 console.log(sentenceRainbowColors(rainbowColorsArr));
